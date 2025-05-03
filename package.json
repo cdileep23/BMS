@@ -4,8 +4,11 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-   "dev":"nodemon index.js"
-  },
+  "dev": "nodemon index.js",
+  "start": "node index.js",
+  "build": "echo 'No build step required for this Node.js app'"
+}
+,
   "keywords": [],
   "author": "",
   "license": "ISC",
