@@ -8,8 +8,10 @@ const app=express()
 
 
 app.use(express.json())
-
-app.use('/api/', batterRouter)
+app.get("/",(req,res)=>{
+    res.send("Hello from BMs")
+})
+app.use('/api', batterRouter)
 app.listen(process.env.PORT,()=>{
     connectDB()
     console.log(`Server stateed at port ${process.env.PORT}`)
